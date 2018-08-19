@@ -31,7 +31,7 @@ class Program_keahlian extends CI_Controller {
             if($this->form_validation->run() != false){
                 $this->jurusan->simpan();
                 $this->session->set_flashdata('info_success','Program Keahlian berhasil ditambahkan!');
-                redirect('program_keahlian/tambah');
+                redirect('admin/program_keahlian/tambah');
             }
 		}
 		$data['content'] = 'program_keahlian/tambah';
@@ -43,7 +43,7 @@ class Program_keahlian extends CI_Controller {
         if ($this->jurusan->valid_skt($skt) == TRUE)
         {
             $this->session->set_flashdata('info_error','Program Keahlian dengan singkatan '.$skt.' sudah ada!');
-            redirect('program_keahlian/tambah');
+            redirect('admin/program_keahlian/tambah');
         }
     }
 
@@ -56,10 +56,10 @@ class Program_keahlian extends CI_Controller {
             $this->form_validation->set_rules('singkatan', 'Singkatan', 'trim|required');
             if($this->form_validation->run() != false){
                 $this->jurusan->update();
-                redirect('program_keahlian');
+                redirect('admin/program_keahlian');
             }
 		}
-		$id              = $this->uri->segment(3);
+		$id              = $this->uri->segment(4);
 		$data['row']     = $this->db->get_where($this->table,array($this->pktbl=>$id))->row_array();
 		$data['content'] = 'program_keahlian/edit';
 		$this->load->view('template',$data);
@@ -67,9 +67,9 @@ class Program_keahlian extends CI_Controller {
 
 	public function delete()
 	{
-		$this->db->where($this->pktbl,$this->uri->segment(3));
+		$this->db->where($this->pktbl,$this->uri->segment(4));
 		$this->db->delete($this->table);
-        redirect('program_keahlian');
+        redirect('admin/program_keahlian');
 	}
 
 }

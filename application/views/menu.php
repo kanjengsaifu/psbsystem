@@ -17,30 +17,30 @@
           <li class="nav-item">
             <a href="javascript:void(0)" class="nav-link" data-toggle="dropdown"><i class="fe fe-box"></i> Data Referensi</a>
             <div class="dropdown-menu dropdown-menu-arrow">
-              <a href="<?php echo base_url(); ?>program_keahlian" class="dropdown-item "><i class="fa fa-bookmark"></i>Program Keahlian</a>
-              <a href="<?php echo base_url(); ?>kelas" class="dropdown-item "><i class="fa fa-book"></i>Kelas</a>
+              <a href="<?php echo base_url(); ?>admin/program_keahlian" class="dropdown-item "><i class="fa fa-bookmark"></i>Program Keahlian</a>
+              <!-- <a href="<?php echo base_url(); ?>kelas" class="dropdown-item "><i class="fa fa-book"></i>Kelas</a> -->
             </div>
           </li>
           <li class="nav-item dropdown">
             <a href="javascript:void(0)" class="nav-link" data-toggle="dropdown"><i class="fe fe-calendar"></i> Manajemen PPDB</a>
             <div class="dropdown-menu dropdown-menu-arrow">
-              <a href="<?php echo base_url(); ?>gelombang" class="dropdown-item "><i class="fa fa-calendar"></i>Gelombang Pendaftaran</a>
-              <a href="<?php echo base_url(); ?>kuota" class="dropdown-item "><i class="fa fa-filter"></i>Kuota Pendaftaran</a>
+              <a href="<?php echo base_url(); ?>admin/gelombang" class="dropdown-item "><i class="fa fa-calendar"></i>Gelombang Pendaftaran</a>
+              <a href="<?php echo base_url(); ?>admin/kuota" class="dropdown-item "><i class="fa fa-filter"></i>Kuota Pendaftaran</a>
             </div>
           </li>
           <li class="nav-item dropdown">
             <a href="javascript:void(0)" class="nav-link" data-toggle="dropdown"><i class="fe fe-file"></i>PPDB</a>
             <div class="dropdown-menu dropdown-menu-arrow">
-              <a href="<?php echo base_url(); ?>ppdb/pendaftar" class="dropdown-item "><i class="fa fa-smile-o"></i> Semua Pendaftar</a>
-              <a href="<?php echo base_url(); ?>ppdb/proses_seleksi" class="dropdown-item "><i class="fa fa-hourglass"></i> Proses Seleksi</a>
-              <a href="<?php echo base_url(); ?>ppdb/pendaftar_diterima" class="dropdown-item "><i class="fa fa-check-circle"></i> Pendaftar Diterima</a>
-              <a href="<?php echo base_url(); ?>theme/pendaftar_ditolak" class="dropdown-item "><i class="fa fa-times-circle "></i>Pendaftar Tidak Diterima</a>
+              <a href="<?php echo base_url(); ?>admin/ppdb/pendaftar" class="dropdown-item "><i class="fa fa-smile-o"></i> Semua Pendaftar</a>
+              <a href="<?php echo base_url(); ?>admin/ppdb/proses_seleksi" class="dropdown-item "><i class="fa fa-hourglass"></i> Proses Seleksi</a>
+              <a href="<?php echo base_url(); ?>admin/ppdb/pendaftar_diterima" class="dropdown-item "><i class="fa fa-check-circle"></i> Pendaftar Diterima</a>
+              <a href="<?php echo base_url(); ?>admin/ppdb/pendaftar_ditolak" class="dropdown-item "><i class="fa fa-times-circle "></i>Pendaftar Tidak Diterima</a>
             </div>
           </li>
           <li class="nav-item dropdown">
             <a href="javascript:void(0)" class="nav-link" data-toggle="dropdown"><i class="fa fa-cogs"></i>Pengaturan</a>
             <div class="dropdown-menu dropdown-menu-arrow">
-              <a href="<?php echo base_url(); ?>ppdb/pengaturan" class="dropdown-item "><i class="fa fa-street-view"></i>PPDB</a>
+              <a href="<?php echo base_url(); ?>admin/ppdb/pengaturan" class="dropdown-item "><i class="fa fa-street-view"></i>PPDB</a>
             </div>
           </li>
         </ul>

@@ -1,9 +1,9 @@
 <div class="card">
-	<form action="<?php echo site_url('program_keahlian/edit') ?>" method="POST" class="card">
+	<form action="<?php echo site_url('admin/program_keahlian/edit') ?>" method="POST" class="card">
 		<div class="card-header">
 			<h3 class="card-title">EDIT PROGRAM KEAHLIAN <?php echo $row['singkatan'];?></h3>
 			<div class="card-options">
-		        <a href="<?php echo site_url('program_keahlian') ?>" class="btn btn-primary btn-sm"><i class="fa fa-reply"></i> Kembali</a>
+		        <a href="<?php echo site_url('admin/program_keahlian') ?>" class="btn btn-primary btn-sm"><i class="fa fa-reply"></i> Kembali</a>
 		    </div>
 		</div>
 		<div class="card-body">

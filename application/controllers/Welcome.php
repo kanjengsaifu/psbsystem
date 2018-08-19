@@ -5,9 +5,13 @@ class Welcome extends CI_Controller {
 
 	public function index()
 	{
-		$data['title'] = 'Dashboard';
-		$data['subtitle'] = '';
-		$data['content'] = 'dashboard';
-		$this->load->view('template',$data);
+		$data['title'] = 'Home';
+		$data['subtitle'] = 'PPDB SMK';
+		$data['content'] = 'frontend/home';
+		$this->load->view('frontend/template',$data);
 	}
+
 }
+
+/* End of file Welcome.php */
+/* Location: ./application/controllers/Welcome.php */
